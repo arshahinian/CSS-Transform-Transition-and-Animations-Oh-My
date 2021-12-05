@@ -65,7 +65,7 @@ a:hover {
     background-color: rebeccapurple;
   }
   to {
-    top: 34px;
+    top: 32px;
     transform: rotate(45deg);
     background-color: ghostwhite;
   }
@@ -87,7 +87,7 @@ a:hover {
     background-color: rebeccapurple;
   }
   to {
-    top: -34px;
+    top: -32px;
     transform: rotate(-45deg);
     background-color: ghostwhite;
   }
