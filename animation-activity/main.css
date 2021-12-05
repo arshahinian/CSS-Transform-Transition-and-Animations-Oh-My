@@ -29,6 +29,21 @@ body  {
   margin: auto;
 }
 
+div #top {
+  position: relative;
+  animation: 4s cross-over-top;
+}
+
+div #middle {  
+  animation: 4s cross-over-middle;
+}
+
+div #bottom {
+  position: relative;
+  animation: 4s cross-over-bottom;
+}
+
+
 li {
   list-style-type: none;
   margin-bottom: 1em;
@@ -41,4 +56,39 @@ a {
 }
 a:hover {
   color: ghostwhite;
+}
+
+@keyframes cross-over-top {
+  from {
+    top: 0px;
+    transform: rotate(0);
+    background-color: rebeccapurple;
+  }
+  to {
+    top: 34px;
+    transform: rotate(45deg);
+    background-color: ghostwhite;
+  }
+}
+
+@keyframes cross-over-middle {
+  from {
+    background-color: rebeccapurple;
+  }
+  to {
+    background-color: mediumvioletred;
+  }
+}
+
+@keyframes cross-over-bottom {
+  from {
+    top: 0px;
+    transform: rotate(0);
+    background-color: rebeccapurple;
+  }
+  to {
+    top: -34px;
+    transform: rotate(-45deg);
+    background-color: ghostwhite;
+  }
 }
